@@ -17,8 +17,8 @@ import random_queens
 # func_queens.intersection_search(queens_true.queens)
 
 # Вызов функции нахождения пересечений ферзей
-# func_queens.intersection_search(random_queens.queens_rnd())
+func_queens.intersection_search(random_queens.queens_rnd())
 
 # нахождение четырёх правильных расстановок ферзей
 # с помощью рандомной расстановки ферзей и записи в файл .txt
-func_queens.func_search_four_arrangements()
+# func_queens.func_search_four_arrangements()
