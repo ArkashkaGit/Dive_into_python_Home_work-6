@@ -1,5 +1,7 @@
 # В модуль с проверкой даты!
 # - добавьте возможность запуска в терминале с передачей даты на проверку.
+import sys
+
 
 def _leap_year(year):
     if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
@@ -17,7 +19,4 @@ def my_date(date: str):
             return _leap_year(year) and day <= 29
 
 if __name__ == '__main__':
-    print(my_date('25.12.1986'))
-    print(my_date('29.2.2023'))
-    print(my_date('29.2.2020'))
-    print(my_date('32.3.2020'))
+    print(my_date(sys.argv[1]))

@@ -8,3 +8,17 @@
 # 3. Напишите функцию в шахматный модуль!
 # - Используйте генератор случайных чисел для случайной расстановки ферзей в задаче выше.
 # - Проверяйте различный случайные  варианты и выведите 4 успешных расстановки.
+
+import func_queens
+import queens_true
+import random_queens
+
+# Вызов функции с правильной расстаовкой ферзей
+# func_queens.intersection_search(queens_true.queens)
+
+# Вызов функции нахождения пересечений ферзей
+# func_queens.intersection_search(random_queens.queens_rnd())
+
+# нахождение четырёх правильных расстановок ферзей
+# с помощью рандомной расстановки ферзей и записи в файл .txt
+func_queens.func_search_four_arrangements()
